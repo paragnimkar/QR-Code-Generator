@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Other head elements -->
+    <title>Text to QR Generator</title>
+    <link rel="icon" href="Images/qr-code-icon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Text to QR Code Generator</h1>
+        <label for="textInput">Enter Text:</label>
+        <input type="text" id="textInput" placeholder="Enter text...">
+        <div id="qrcode"></div>
+        <div class="download-buttons">
+            <button onclick="downloadQR('png')">Download as PNG</button>
+            <button onclick="downloadQR('svg')">Download as SVG</button>
+        </div>
+    </div>
+
+    <!-- ... (existing code) ... -->
+
+<footer>
+    <div class="footer-links">
+        <a href="https://github.com/paragnimkar" target="_blank" rel="noopener noreferrer">
+            <img src="Images/github-mark-white.svg" alt="GitHub Logo">
+        </a>
+    </div>
+</footer>
+
+<!-- ... (remaining code) ... -->
+
+
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
